@@ -123,21 +123,24 @@
                     Необходимо иметь JDK 8/11/16+ в системе, но Scala не использует новые фичи из jdk 8+ версий
                 </p>
             </section>
+
             <section data-markdown>
                 <textarea data-template>
                     ## SBT
 
                     ### Базовые команды
-					```console [1-9|1|2|3-4|5|6-7|8|9]
-					user@mac example % sbt
-					sbt:example> compile
-					sbt:example> projects # Список всех модулей вашего проекта
-					sbt:example> project moduleName
-					sbt:example> reload # Перезагружает спецификацию сборки
-					sbt:example> moduleName/run # запускает приложение из модуля
-					sbt:example> moduleName/test # запускает тесты из модуля
-					sbt:example> clean # Удаляет все сгенерированные файлы
-					sbt:example> help
+
+                    ```console [1-9|1|2|3-4|5|6-7|8|9]
+                    user@mac example % sbt
+                    sbt:example> compile
+                    sbt:example> projects # Список всех модулей вашего проекта
+                    sbt:example> project moduleName
+                    sbt:example> reload # Перезагружает спецификацию сборки
+                    sbt:example> moduleName/run # запускает приложение из модуля
+                    sbt:example> moduleName/test # запускает тесты из модуля
+                    sbt:example> clean # Удаляет все сгенерированные файлы
+                    sbt:example> help
+                    ```
                     ---
 
                     ### Файлы конфигурации (Build файлы)
