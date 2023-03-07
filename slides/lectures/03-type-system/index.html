@@ -245,9 +245,9 @@
                     ```scala [1-15]
                     sealed trait UserState
                     object UserState {
-                      case object Online extends UserStatusEnum
-                      case object Offline extends UserStatusEnum
-                      case object Banned extends UserStatusEnum
+                      case object Online extends UserState
+                      case object Offline extends UserState
+                      case object Banned extends UserState
                     }
 
                     case class UserStatus(
@@ -292,7 +292,7 @@
                         case Online => ZonedDateTime.now()
                         case Offline(lastVisit) => lastVisit
                         case Banned(_, time) => time
-                    }
+                      }
                     ```
 
                 </textarea>
