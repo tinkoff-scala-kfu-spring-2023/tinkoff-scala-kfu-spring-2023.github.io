@@ -530,7 +530,7 @@
                       () => res
                     }
 
-                    def deferredAdd(l: Int, r: Int): Computation[Int] =
+                    def deferredAdd(l: Int, r: Int): IO[Int] =
                       { () => add(l, r) }
                     ```
 
